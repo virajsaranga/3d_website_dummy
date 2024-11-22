@@ -22,7 +22,11 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer 
+        Hi, I’m Viraj Ridiyagama, a passionate developer and freelancer specializing in .NET C#, SQL Server, ASP.NET MVC, Telerik Kendo UI, and front-end technologies like React.js. My work bridges the gap between elegant design and robust functionality.
+
+Explore my projects, blogs, and achievements to see how I bring innovative ideas to life in software development, DevOps, and UI design. Let’s connect and collaborate on building the future!
+
+
           
          
          
