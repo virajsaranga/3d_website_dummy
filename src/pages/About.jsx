@@ -22,8 +22,10 @@ const About = () => {
 
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
         <p>
-          Software Engineer based in Croatia, specializing in technical
-          education through hands-on learning and building applications.
+          Software Engineer 
+          
+         
+         
         </p>
       </div>
 
