@@ -5,6 +5,7 @@
     padding: 20px 0; /* Padding around the header */
     text-align: center; /* Center align text */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    animation: slideInDown 1s ease-out; /* Header animation */
 }
 
 /* Header Title Styling */
@@ -12,6 +13,7 @@
     font-size: 2.5rem; /* Large, prominent title */
     margin: 0; /* Remove margin */
     font-weight: 700; /* Bold text */
+    animation: fadeIn 2s ease-in; /* Title animation */
 }
 
 /* Navigation Menu Styling */
@@ -22,6 +24,7 @@
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center align menu items */
     gap: 20px; /* Space between menu items */
+    animation: slideUp 1.5s ease-out; /* Menu animation */
 }
 
 /* Navigation Link Styling */
@@ -40,6 +43,9 @@
 /* Navigation Link Hover Effect */
 .header nav ul li a:hover {
     color: #21a1f1; /* Darker blue on hover */
+    text-shadow: 0 2px 4px rgba(33, 161, 241, 0.5); /* Glow effect */
+    transform: scale(1.1); /* Slight zoom effect */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
 /* Responsive Design */
@@ -51,5 +57,37 @@
     .header nav ul {
         flex-direction: column; /* Stack menu items vertically */
         gap: 10px; /* Reduce gap for stacked items */
+    }
+}
+
+/* Animations */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
